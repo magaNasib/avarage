@@ -108,9 +108,8 @@ function btnOkModalFunc(e) {
     arrayMark.sort((a, b) => a - b);
     const sum = arrayMark.reduce((partial_sum, a) => partial_sum + a, 0);
     tbodyMain.children[indexOfLink - 1].children[3].textContent = arrayMark[0];
-    tbodyMain.children[indexOfLink - 1].children[4].textContent =
-        arrayMark[arrayMark.length - 1];
-    tbodyMain.children[indexOfLink - 1].children[5].textContent = sum / 2;
+    tbodyMain.children[indexOfLink - 1].children[4].textContent = arrayMark[arrayMark.length - 1];
+    tbodyMain.children[indexOfLink - 1].children[5].textContent = (sum / arrayMark.length).toFixed(2);
     e.preventDefault();
     resetModal();
 }
