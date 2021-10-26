@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #D2DFE8 !important;
+}
+
+.bg-blue {
+    background-color: #EAF0F5;
+}
+
+.linkSimple {
+    cursor: pointer;
+    color: blue !important;
+}
+
+.linkSimple:hover {
+    text-decoration: underline !important;
+}
+
+.modal-dialog {
+    max-width: 75% !important;
+    margin: auto !important;
+}
+
+#dropdownMenuButton {
+    border: 1px solid #ced4da;
+}
+
+@media screen and (max-width: 768px) {
+    .columnMake {
+        flex-direction: column;
+    }
+    .modal-dialog {
+        width: 100% !important;
+    }
+}
